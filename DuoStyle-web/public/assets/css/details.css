@@ -1,0 +1,62 @@
+body{
+    background-color: #0f0f0f;
+    color: #ffffff;
+}
+
+.card{
+    background-color: #1a1a1a;
+    color: white;
+    border-radius: 12px;
+}
+
+.card.shadow-sm{
+    background-color: #141414;
+}
+
+.card-title{
+    font-weight: 700;
+}
+
+hr{
+    border-color: rgba(212,175,55,0.4);
+}
+
+.list-group-item{
+    background-color: transparent;
+    border-color: rgba(255,255,255,0.08);
+    color: white;
+}
+
+.badge{
+    background-color: #d4af37;
+    color: black;
+    font-weight: 600;
+}
+
+.btn-outline-secondary{
+    border-color: #d4af37;
+    color: #d4af37;
+    transition: 0.3s;
+}
+
+.btn-outline-secondary:hover{
+    background-color: #d4af37;
+    color: black;
+}
+
+.object-fit-cover{
+    object-fit: cover;
+}
+
+.str{
+    color: #d4af37;
+}
+
+.list-group-item:hover{
+    background-color: rgba(212,175,55,0.08);
+}
+
+.rw{
+    border: 1px solid #D4AF37;
+    box-shadow: 0 4px 12px #D4AF37;
+}

@@ -1,0 +1,201 @@
+/* Navbar */
+nav {
+    border-bottom: 5px solid #D4AF37;
+}
+
+nav,
+.offcanvas {
+    background-color: black;
+}
+
+.login-button {
+    background-color: black;
+    color: white;
+    padding: 8px 20px;
+    border-radius: 50px;
+    font-size: 14px;
+    text-decoration: none;
+    border: 1px ridge #D4AF37;
+    transition: color 0.3s ease, box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.login-button:hover {
+    box-shadow: 0 4px 12px #D4AF37;
+    color: white;
+}
+.d-menu{
+    border: 1px ridge #D4AF37;
+    background-color: #151515;
+    transform: translateX(-15%);
+}
+
+.d-item{
+    color: white;
+}
+
+.d-item:hover {
+    background-color: #D4AF37;
+    color: black;
+}
+
+.navbar.navbar-expand-md .nav-link,
+.navbar.navbar-expand-md .navbar-brand,
+.navbar.navbar-expand-md .navbar-brand span {
+    color: white;
+}
+
+.offcanvas .nav-link,
+.offcanvas .offcanvas-title {
+    color: white;
+}
+
+.navbar .nav-link {
+    position: relative;
+    padding-bottom: 6px;
+}
+
+.navbar .nav-link::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 2px;
+    width: 0;
+    height: 2px;
+    background-color: #D4AF37;
+    transition: width 0.3s ease;
+}
+
+.navbar .nav-link:hover::after {
+    width: 100%;
+}
+
+.navbar .nav-link.active::after,
+.navbar .nav-link[aria-current="page"]::after {
+    width: 100%;
+}
+
+.navbar-toggler {
+    border: none;
+    font-size: 1rem;
+}
+
+.navbar-toggler-icon {
+    filter: invert(1);
+}
+
+.navbar-toggler:focus,
+.btn-close:focus {
+    box-shadow: none;
+    outline: none;
+}
+
+nav img {
+    height: 50px;
+}
+
+.mobile-login{
+    width: 400px;
+}
+
+/* Reszponzív stílusok */
+@media (max-width: 767px) {
+    .nav img {
+        height: 40px;
+    }
+
+    .offcanvas.offcanvas-end {
+        width: 250px;
+    }
+
+    .offcanvas .nav-link {
+        display: inline-block;
+        width: auto;
+    }
+
+    .login-button {
+        margin-right: 10px;
+    }
+
+    #card1, .card2, #card3 {
+        margin-bottom: 15px;
+    }
+
+    .btn-close {
+        filter: invert(1);
+        opacity: 1;
+    }
+
+    .mobile-login{
+        width: 300px;
+        transform: translateX(+15%);
+        margin: 0;
+        border-radius: 0;
+    }
+}
+
+/* Footer */
+footer {
+    background-color: black;
+    color: white;
+    border-top: 5px solid #D4AF37;
+}
+
+.card {
+    border: 1px ridge #D4AF37;
+    background-color: #151515;
+    color: white;
+    box-shadow: 0 4px 12px #D4AF37;
+}
+
+footer .card:hover{
+    box-shadow: 0 4px 12px #D4AF37;
+    transition: transform 0.4s ease;
+    transform: scale(1.03);
+}
+
+.bi-instagram {
+    --instagram-blue: #3051f1;
+    --instagram-purple: #c92bb7;
+    --instagram-red: #f73344;
+    --instagram-orange: #fa8e37;
+    --instagram-yellow: #fcdf8f;
+    --instagram-yellow_to: #fbd377;
+    background: radial-gradient(circle farthest-corner at 28% 120%, var(--instagram-yellow) -16%, var(--instagram-yellow_to) 16%, var(--instagram-orange) 32%, var(--instagram-red) 48%, transparent 64%), linear-gradient(0deg, var(--instagram-red) 16%, transparent 72%), linear-gradient(145deg, var(--instagram-blue) -48%, var(--instagram-purple) 24%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    display: inline-block;
+    transition: transform 0.3s ease;
+}
+
+.bi-instagram:hover {
+    transform: scale(1.2);
+}
+
+.bi-facebook {
+    --fb-blue-dark: #0a3d91;
+    --fb-blue-main: #1877F2;
+    --fb-blue-light: #4e8df5;
+    background: linear-gradient(135deg, var(--fb-blue-dark), var(--fb-blue-main), var(--fb-blue-light));
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    display: inline-block;
+    transition: transform 0.3s ease;
+}
+
+.bi-facebook:hover {
+    transform: scale(1.2);
+}
+
+.star-rating{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.rating-row {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}

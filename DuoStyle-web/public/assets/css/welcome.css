@@ -1,0 +1,75 @@
+/* Háttér beállítások */
+.image-overlay {
+    position: relative;
+    background-image: url('../img/back.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.image-overlay::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: 1;
+}
+
+.image-overlay>.container {
+    position: relative;
+    z-index: 2;
+}
+
+/* Erősebb háttérátláthatóság */
+.strong-overlay {
+    position: relative;
+}
+
+.strong-overlay::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 1;
+}
+
+.strong-overlay>* {
+    position: relative;
+    z-index: 2;
+}
+
+.reserv-btn {
+    background-color: black;
+    color: white;
+    padding: 8px 20px;
+    border-radius: 50px;
+    font-size: 14px;
+    text-decoration: none;
+    border: 1px ridge #D4AF37;
+    transition: background-color 0.3s ease, color 0.3s ease, box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.reserv-btn:hover {
+    box-shadow: 0 4px 12px #D4AF37;
+}
+
+.ev-title{
+  font-size: 2.2rem;
+  font-weight: 700;
+  margin: 0 0 1rem;
+  line-height: 1.2;
+}
+
+h1{
+    font-size: 3rem;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    text-shadow: 0 2px 4px black;
+}
+
+/* Reszponzív margó az értékelésekhez mobilon */
+@media (max-width: 767px) {
+    .margin {
+        margin-bottom: 15px;
+    }
+}

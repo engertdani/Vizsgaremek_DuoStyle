@@ -1,0 +1,59 @@
+.employee-main{
+    background: linear-gradient(180deg,#0a0a0a,#111,#0a0a0a);
+    min-height:100vh;
+}
+
+.employee-header{
+    text-align:center;
+    padding-top:50px;
+}
+
+.employee-header h1{
+    font-size:42px;
+    color:#D4AF37;
+    font-weight:600;
+    letter-spacing:2px;
+}
+
+.employee-header p{
+    color:#bbb;
+    margin-top:10px;
+}
+
+.divider{
+    width:120px;
+    height:2px;
+    background:#D4AF37;
+    margin:20px auto;
+}
+
+.employee-con{
+    background-color:black;
+    padding:40px;
+    border-radius:10px;
+    border: 1px solid #D4AF37;
+    box-shadow: 0 4px 12px #D4AF37;
+}
+
+.card-img-top{
+    height:220px;
+    object-fit:cover;
+}
+
+.row .col-12{
+    transition:0.3s;
+}
+
+.row .col-12:hover{
+    transform:translateY(-6px);
+}
+
+.row{
+    margin-top:20px;
+}
+
+.card:hover{
+    box-shadow: 0 4px 12px #D4AF37;
+    transition: transform 0.4s ease;
+    transform: scale(1.03);
+}

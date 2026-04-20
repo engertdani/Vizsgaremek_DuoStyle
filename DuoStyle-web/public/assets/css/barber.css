@@ -1,0 +1,47 @@
+.service-button {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.service-btn {
+    width: 100%;
+    padding: 12px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    background: #fff;
+    text-align: left;
+    transition: 0.2s;
+}
+
+.service-btn:hover {
+    background: #111;
+    color: #fff;
+    border-color: #D4AF37;
+}
+
+.bordersty{
+    border-right: 1px solid #D4AF37;;
+}
+
+.btn-outline-light:hover{
+    border-color: #D4AF37;
+}
+
+.area{
+    border: 1px ridge #D4AF37;
+    background-color: #151515;
+    border-radius: 10px;
+    box-shadow: #D4AF37 0px 5px 15px;
+}
+
+@media (max-width: 992px) {
+    .bordersty{
+        border-right: none;
+        border-bottom: 1px solid #D4AF37;
+    }
+
+    .area{
+        margin-bottom: 15px;
+    }
+}

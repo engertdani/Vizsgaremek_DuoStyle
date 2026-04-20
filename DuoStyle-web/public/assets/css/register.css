@@ -1,0 +1,37 @@
+h2 {
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.inp:focus {
+    outline: none;
+    border-color: #ffd700;
+    box-shadow: 0 0 8px #ffd700;
+}
+
+.loginbtn {
+    background-color: black;
+    color: white;
+    padding: 8px 20px;
+    border-radius: 50px;
+    font-size: 14px;
+    text-decoration: none;
+    border: 1px ridge #D4AF37;
+    transition: background-color 0.3s ease,
+                color 0.3s ease,
+                box-shadow 0.3s ease,
+                transform 0.3s ease;
+}
+
+.loginbtn:hover {
+    box-shadow: 0 4px 12px #D4AF37;
+}
+
+a {
+    text-decoration: none;
+}
+
+.newpass {
+    margin-top: 150px;
+    margin-bottom: 150px;
+}
